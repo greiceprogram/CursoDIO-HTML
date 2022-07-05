@@ -1,0 +1,124 @@
+Introdução ao CSS3↓
+
+O que são seletores?
+
+Seletores são apenas elementos Html
+
+ex: 
+a, p, h1, h3{
+color: blue;
+font-size: 14px;
+}
+Declarações
+
+Após a criação do HTML a necessidade de formatar as páginas ficou evidente, assim, em 1996, foi criada a linguagem de estilo que conhecemos por CSS.
+
+A Sintaxe é bem simples e pode ser explicada com a frase "você cria regras de estilo para elementos ou grupos de elementos".
+
+A regra Css é representada por um seletor ou um grupo de seletores, no nosso caso é o <a>, então dentro de um par de chaves adicionamos as declarações, no exemplo acima estamos alterando cor e tamanho da fonte de âncora, as declarações são formadas por uma propriedade e um valor.
+
+Podemos colocar vários seletores em um regra separando-os por vírgula.
+
+E há um último detalhe nesse exemplo: a pseudo-classe. Elementos HTML sofrem alterações causadas pela interação do usuário, como mover o mouse por cima ou clicar nesse elemento. 
+
+O a→ hover do exemplo significa que a âncora também terá essa aparência quando o usuário passar o mouse por cima de um Hyperlink.
+
+===================================================
+ID X Classe
+
+<header id="header" class="header"></header>
+<header class="header"></header>
+
+Representam quaisquer tipos de elementos
+
+Uma Classe(Precedida por um . (ponto) ao invés de # (hash).E não tem restrições ao usa-lo) representada por:
+.header{
+padding: 10px;
+}
+
+Uma Id (só pode ser usado uma unica vez na página, representado pelo símbolo #(hash) seguido de um nome para esse Id) representada por:
+#header{
+padding: 15px;
+}
+
+
+
+===================================================
+Conceitos básicos? 
+
+Box Model: Quando estamos criando o layout de um site o navegador representa casa elemento HTML como uma caixinha retangular, isso é o box-model. E com CSS nós alteramos a aparência dessa caixa (largura, altura, cor de fundo, etc.) Essa caixa é composta por 4 áreas: Conteúdo, o padding, a borda e a margem.
+
+As Margens (Margin)→ Espaçamento entre os elementos.
+As bordas (Border)→ Circundão o padding e o content, fazendo com que consigamos alterar sua aparência, como largura e cor.
+Padding→ Espaçamento entre a borda e o conteúdo, 
+O conteúdo (Content)→ É o que o bloco representa um texto, imagem ou vídeo. 
+
+
+Padding & Margin↓
+
+Anteriormente usamos o padding e o margin da forma mais básica, com apenas um valor, mas eles são mais poderosos que isso. Se quisermos atribuir tamanhos diferentes para cada lado do box nós podemos, e vamos ver três formas de fazer isso.
+
+A primeira é colocando um valor para as partes superiores e inferiores e depois para  os lados esquerdo e direito. 
+
+O valor de 10 pixels se refere ao eixo y, ou partes superior e inferior, e os 5 pixels se referem aos lados esquerdo e direito.
+
+A segunda forma é dando valores para cada lado do box.
+
+Então começamos pelo topo com 15 pixels, passamos o lado direito com 10 pixels, depois para a parte inferior com 5 pixels e por último o lado esquerdo com 0, e sempre nessa ordem.
+
+Uma boa dica também é que quando o valor for 0 não precisamos colocar a unidade. 
+
+A terceira forma é com as propriedades especificas para cada lado, até agora tínhamos visto atalhos para essas propriedades.
+
+A opção é mais usada quando temos o mesmo valor para 3 lados, e o quarto precisa ter um valor diferente, então usamos o padding com apenas um valor e uma dessas opções para representar o lado diferente. 
+
+___________________________________________________
+
+BACKGROUND↓
+
+Também é um atalho para várias propriedades, mais isso vocês podem absorver aos poucos, uma boa opção de leitura é a documentação do MDN.
+
+Aqui temos 3 formas de colocar uma cor de fundo, e ainda existem outras.
+
+A primeira é o nome em inglês, a segunda é pelo código hexadecimal e a terceira é usando apenas o atalho background.
+
+___________________________________________________
+BORDER↓
+
+Vimos que a propriedade border pode ter 3 valores: a largura, a cor e o estilo, mas existem algumas particularidades nisso.
+
+A largura pode ser usada com várias unidades, como px, em e mm.A cor pode ser atribuida pelo nome ou por um código hexadecimal, assim como fizemos com o background, e o estilo é representada por palavras-chave:
+
+solid: mostra uma borda simples e reta.
+dotted: são bolinhas com um pequeno espaçamento entre elas.
+dashed: forma uma linha tracejada.
+
+E se não quisermos usar a propriedade border existem as propriedades especificas para casa aspecto de uma borda, são elas border-width para a largura, border-color para a cor e border-style para o estilo. 
+
+Border-radius: ele permite arredondar os cantos de um elemento. Podemos usar várias unidades, mais as mais comuns são pixels e a porcentagem.
+
+Padding e margin-topo, direita, inferior e esquerda- Conseguimos alterar cada canto separadamente. 
+
+Font-family: Podemos alterar a fonte dos nossos textos, como uma fonte da internet ou uma que esteja instalada no nosso computador, mas vamos nos ater ás fontes seguras, chamadas de web safe fonts.
+
+Essas fontes são chamadas assim pois são encontradas em quases todos os sistemas e podem ser usadas sem preocupações.
+
+Font-size: Muda o tamanho do texto. 
+
+Font-style: Para tornar um texto italico, na maioria das vezes você vai usar apenas Italic para ele, mas se precisar tirar o itálico de um texto você pode usar o valor normal. 
+
+
+
+===================================================
+
+Dimensões e alinhamento↓
+
+Width→ Largura
+Heigth→ Altura
+
+Max-width→ Largura Maxima
+Max-heigth→ Altura Maxima
+
+Margin→ Alinhar algum elemento
+
+Text align→ Alinhar textos
